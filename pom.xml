@@ -18,7 +18,7 @@
 
     <groupId>com.metaring</groupId>
     <artifactId>generator-util-java</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <name>MetaRing Generator - Java Utilities</name>
     <description>MetaRing Utilities for Java-Based Code Generators</description>
@@ -42,7 +42,7 @@
     <scm>
         <url>https://github.com/metaring/generator-util-java.git</url>
         <developerConnection>scm:git:git@github.com:metaring/generator-util-java.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>v1.0.0</tag>
     </scm>
 
     <dependencies>
