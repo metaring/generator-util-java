@@ -18,7 +18,7 @@
 
     <groupId>com.metaring</groupId>
     <artifactId>generator-util-java</artifactId>
-    <version>1.5.8-SNAPSHOT</version>
+    <version>1.5.9-SNAPSHOT</version>
 
     <name>MetaRing Generator - Java Utilities</name>
     <description>MetaRing Utilities for Java-Based Code Generators</description>
@@ -49,7 +49,7 @@
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>generator-model</artifactId>
-            <version>1.5.7</version>
+            <version>1.5.8</version>
         </dependency>
     </dependencies>
 
