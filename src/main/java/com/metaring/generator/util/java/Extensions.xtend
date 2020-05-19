@@ -28,8 +28,10 @@ final class Extensions {
 
     static def getGeneratedPackageDeclaration(Element element) '''package «element.packageFQN»;'''
 
-    static def getPackageFQN(Element element)
-        '''«IF element.packagesChain !== null && !element.packagesChain.empty»«FOR pn : element.packagesChain»«pn»«IF element.packagesChain.last !== pn».«ENDIF»«ENDFOR»«ENDIF»«IF typeof(Module).isInstance(element)».«element.name»«ENDIF»'''
+    static def getPackageFQN(Element element) {
+        var packageFQN = '''«IF element.packagesChain !== null && !element.packagesChain.empty»«FOR pn : element.packagesChain»«pn»«IF element.packagesChain.last !== pn».«ENDIF»«ENDFOR»«ENDIF»«IF typeof(Module).isInstance(element)».«element.name»«ENDIF»'''
+        return packageFQN.startsWith(".") ? packageFQN.substring(1) : packageFQN;
+    }
 
     static def getPackagePath(Element element) {
         element.packageFQN.toString().replace('.', '/') as CharSequence
